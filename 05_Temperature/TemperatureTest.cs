@@ -32,7 +32,7 @@ namespace _05_Temperature
         {
             Assert.AreEqual(20, Temperature.FahrenheitToCelcius(68));
         }
-
+        
         //Celcius to Fahrenheit
         [TestMethod]
         public void ConvertFreezingTemperatureCTOF()
@@ -54,7 +54,7 @@ namespace _05_Temperature
         {
             Assert.AreEqual(68, Temperature.CelciusToFahrenheit(20));
         }
-
+        
         //INSTANCE CLASSES
 
         //Through properties & constructors
@@ -94,7 +94,7 @@ namespace _05_Temperature
 
         //Test driven bonus. If you have read about factory methods try solving the problem below
 
-        [TestMethod]
+      /*  [TestMethod]
         public void CanBeConstructedViaFactoryMethod()
         {
             ITemperature temp = TemperatureFactory.Get(Unit.Celcius); //Use Enum
@@ -114,7 +114,7 @@ namespace _05_Temperature
             ITemperature temp = TemperatureFactory.Get(Unit.Fahrenheit); //Use Enum
             Assert.AreEqual(212, (temp as Fahrenheit).Convert(100));
             Assert.AreEqual(212, temp.Convert(100));
-        }
+        }*/
 
     }
 }
